@@ -19,7 +19,7 @@ def play_music(hour, minute):
     # 다음 시간까지 대기합니다.
     time.sleep((next_time - now_time).seconds)
 
-    filepath = 'datasets/tvari-tokyo-cafe-159065.mp3'
+    filepath = '../datasets/tvari-tokyo-cafe-159065.mp3'
     # 음악이 일정 시간동안 재생됩니다.
     pygame.mixer.music.load(filepath)
     pygame.mixer.music.play()
